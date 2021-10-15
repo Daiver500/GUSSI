@@ -1,0 +1,131 @@
+.catalog {
+  background-color: $light-black;
+}
+
+.catalog__inner {
+  max-width: 1740px;
+  padding-top: 88px;
+  padding-bottom: 109px;
+}
+
+.catalog__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white;
+}
+
+.catalog__info {
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  margin-bottom: 40px;
+  margin-top: 0;
+  //margin-bottom: auto;
+}
+
+.catalog__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 0;
+  grid-gap: 30px;
+  max-width: 1740px;
+}
+
+.catalog__item {
+  max-height: 544px;
+  max-width: 868px;
+  position: relative;
+}
+
+.catalog__item img {
+  height: 100%;
+}
+
+.catalog__item:hover,
+.catalog__item:focus {
+  opacity: 0.6;
+}
+
+.catalog__text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: $white;
+}
+
+.catalog__link span {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  width: 200px;
+  max-height: 90px;
+  text-align: center;
+  background-color: orange;
+}
+
+
+@media (max-width: $max-tablet-width) {
+  .catalog__inner {
+    padding: 50px 21px 62px 27px;
+  }
+
+  .catalog__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 46px;
+  }
+
+  .catalog__item {
+    max-height: 256px;
+    min-width: 720px;
+  }
+
+  .catalog__item img {
+    object-fit: cover;
+  }
+
+  .catalog__title {
+    font-size: 32px;
+    line-height: 45px;
+    //max-width: 625px;
+    text-align: left;
+    margin-bottom: 49px;
+    padding-left: 0;
+    padding-right: 13%;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .catalog__inner {
+    padding: 50px 10px 48px;
+  }
+
+  .catalog__title {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 42px;
+  }
+
+  .catalog__wrapper {
+    padding-left: 4px;
+    padding-right: 7px;
+  }
+
+  .catalog__list {
+    grid-gap: 30px;
+  }
+
+  .catalog__link span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .catalog__item {
+    max-height: 256px;
+    min-width: 283px;
+  }
+}

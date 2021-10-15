@@ -1,0 +1,158 @@
+.advantages-and-about {
+  margin-bottom: 92px;
+}
+
+.about__inner {
+  display: flex;
+  max-width: 1316px;
+  position: relative;
+  grid-gap: 50px;
+}
+
+.about__inner::before {
+  content: "";
+  position: absolute;
+  left: -525px;
+  top: -259px;
+  width: 767px;
+  height: 727px;
+  background-image: url("../img/advantages-polygon-big.svg");
+  transform: rotate(180deg);
+}
+
+.about__information {
+  max-width: 785px;
+}
+
+.about__information h2,
+.about__information p {
+  margin-top: 0;
+  color: $light-grey;
+}
+
+.about__information h2 {
+  margin-bottom: 18px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about__text--desktop,
+.about__text--tablet {
+  margin-bottom: 48px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__text--tablet {
+  display: none;
+}
+
+.about__information a {
+  text-transform: uppercase;
+  padding: 14px 52px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  border: 1px solid $orange;
+  color: $orange;
+  background-color: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.about__information a:hover,
+.about__information a:focus {
+  background-color: $light-orange;
+  color: $white;
+}
+
+.about__image {
+  //max-width: 350px;
+  height: 317px;
+}
+
+.about__image-wrapper {
+  align-self: center;
+}
+
+@media (max-width: $max-tablet-width) {
+  .advantages-and-about {
+    margin-bottom: 65px;
+  }
+
+  .about__image-wrapper {
+    max-width: 205px;
+  }
+
+  .about__image {
+    width: 230px;
+    height: 362px;
+  }
+
+  .about__information {
+    max-width: 532px;
+  }
+
+  .about__information h2 {
+    margin-bottom: 27px;
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .about__information p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about__text--desktop {
+    max-width: 528px;
+  }
+
+  .about__information a {
+    padding: 14px 54px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .advantages-and-about {
+    margin-bottom: 76px;
+    background-position: 22% 79%;
+  }
+
+  .about__inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about__image-wrapper {
+    display: none;
+  }
+
+  .advantages__list {
+    justify-items: unset;
+  }
+
+  .about__information h2 {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 22px;
+  }
+
+  .about__text--tablet1 {
+    margin-bottom: 39px;
+  }
+
+  .about__text--tablet2 {
+    margin-bottom: 37px;
+  }
+
+  .about__information a {
+    padding: 14px 50px;
+    margin-top: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+}
