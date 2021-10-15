@@ -113,8 +113,8 @@ const build = () => gulp.series (
   copy,
   styles,
   images,
-  sprite,
-  htmlinclude,
+  //sprite,
+  //htmlinclude,
   imageswebp,
 );
 
@@ -153,7 +153,7 @@ exports.html = html;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", gulp.series("html", "htmlinclude", sync.reload));
+  gulp.watch("source/*.html").on("change", gulp.series("html", /*"htmlinclude",*/ sync.reload));
 };
 
 exports.default = gulp.series(
