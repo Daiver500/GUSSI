@@ -81,7 +81,7 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   color: $black;
-  font-size: 25px;
+  font-color: 25px;
   line-height: 29px;
   padding-top: 5px;
 }
@@ -90,7 +90,7 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 500;
   color: $grey;
-  font-size: 12px;
+  font-color: 12px;
   line-height: 14px;
 }
 
@@ -107,7 +107,7 @@
   margin-top: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: $light-black;
-  font-size: 15px;
+  font-color: 15px;
   line-height: 16px;
   text-transform: uppercase;
   margin-bottom: 27px;
@@ -207,7 +207,7 @@
 .copyright__text {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 13px;
+  font-color: 13px;
   line-height: 24px;
   text-transform: uppercase;
   color: $light-black;
@@ -301,7 +301,7 @@
     margin-bottom: 0;
     padding-top: 0;
     opacity: 0.5;
-    font-size: 13px;
+    font-color: 13px;
     line-height: 24px;
     text-transform: uppercase;
   }

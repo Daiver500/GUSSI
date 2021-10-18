@@ -18,16 +18,242 @@
     <include class="include" src="docs/img/sprite.svg"></include>
     <include class="include" src="source/img/sprite.svg"></include>
   </div>
-  <header class="header">
-    <h1>Погнали!!!</h1>
+   <main class="main">
+     <section class="slider">
+       <div class="slider__inner">
 
-  </header>
-  <main class="main">
+        <a class="slider__logo logo" href="#" aria-label="логотип компании GUSSI">
+           <picture class="logo__picture">
+            <!--<source type="image/webp" srcset="img/logo.webp, img/logo@2x.webp 2x ">-->
+            <img class="logo__image" src="img/logo.jpg" srcset="img/logo@2x.jpg 2x" alt="логтип компании GUSSI" widht="95" height="53">
+           </picture>
+         </a>
+
+         <div class="slider__description">
+           <picture class="slider__picture">
+             <!--<source type="image/webp" srcset="img/slider-first.webp, img/slider-first@2x.webp 2x ">-->
+             <img class="slider__image" src="img/slider-first.jpg" srcset="img/slider-first@2x.jpg 2x" alt="картинка слайдера" widht="600" height="768">
+           </picture>
+         </div>
+         <div class="slider__description">
+          <picture class="slider__picture">
+            <!--<source type="image/webp" srcset="img/slider-second.webp, img/slider-second@2x.webp 2x ">-->
+            <img class="slider__image" src="img/slider-second.jpg" srcset="img/slider-second@2x.jpg 2x" alt="картинка слайдера" widht="600" height="768">
+          </picture>
+         </div>
+         <div class="slider__description">
+          <picture class="slider__picture">
+            <!--<source type="image/webp" srcset="img/slider-third.webp, img/slider-third@2x.webp 2x ">-->
+            <img class="slider__image" src="img/slider-third.jpg" srcset="img/slider-third@2x.jpg 2x" alt="картинка слайдера" widht="600" height="768">
+          </picture>
+         </div>
+
+         <div class="slider__information">
+           <p class="slider__title">Light coat</p>
+           <p class="slider__text">More cotton, more freedom</p>
+         </div>
+
+         <div class="slider__buttons">
+           <button class="slider__button slider__button-left" aria-label="кнопка влево">
+            <svg  class="slider__svg-left" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.0426 15.999L19.0909 9.95758C19.1973 9.8511 19.2817 9.72468 19.3393 9.58556C19.3969 9.44643 19.4266 9.29731 19.4266 9.14672C19.4266 8.99613 19.3969 8.84702 19.3393 8.70789C19.2817 8.56876 19.1973 8.44235 19.0909 8.33587C18.9845 8.22938 18.8582 8.14492 18.7192 8.08729C18.5802 8.02966 18.4312 8 18.2807 8C18.1302 8 17.9812 8.02966 17.8422 8.08729C17.7032 8.14492 17.5768 8.22938 17.4704 8.33587L10.6232 15.1882C10.5162 15.2943 10.4313 15.4206 10.3734 15.5598C10.3155 15.699 10.2856 15.8483 10.2856 15.999C10.2856 16.1498 10.3155 16.2991 10.3734 16.4382C10.4313 16.5774 10.5162 16.7037 10.6232 16.8099L17.4704 23.6622C17.5765 23.7692 17.7027 23.8542 17.8418 23.9122C17.9809 23.9701 18.13 24 18.2807 24C18.4313 24 18.5805 23.9701 18.7196 23.9122C18.8586 23.8542 18.9848 23.7692 19.0909 23.6622C19.1979 23.556 19.2828 23.4297 19.3407 23.2905C19.3987 23.1514 19.4285 23.0021 19.4285 22.8513C19.4285 22.7006 19.3987 22.5513 19.3407 22.4121C19.2828 22.273 19.1979 22.1466 19.0909 22.0405L13.0426 15.999Z" fill="white"/>
+              </svg>
+           </button>
+           <button class="slider__button slider__button-right" aria-label="кнопка вправо">
+            <svg class="slider__svg-right" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9574 15.999L12.9091 9.95758C12.8027 9.8511 12.7183 9.72468 12.6607 9.58556C12.6031 9.44643 12.5734 9.29731 12.5734 9.14672C12.5734 8.99613 12.6031 8.84702 12.6607 8.70789C12.7183 8.56876 12.8027 8.44235 12.9091 8.33587C13.0155 8.22938 13.1418 8.14492 13.2808 8.08729C13.4198 8.02966 13.5688 8 13.7193 8C13.8698 8 14.0188 8.02966 14.1578 8.08729C14.2968 8.14492 14.4232 8.22938 14.5296 8.33587L21.3768 15.1882C21.4838 15.2943 21.5687 15.4206 21.6266 15.5598C21.6845 15.699 21.7144 15.8483 21.7144 15.999C21.7144 16.1498 21.6845 16.2991 21.6266 16.4382C21.5687 16.5774 21.4838 16.7037 21.3768 16.8099L14.5296 23.6622C14.4235 23.7692 14.2973 23.8542 14.1582 23.9122C14.0191 23.9701 13.87 24 13.7193 24C13.5687 24 13.4195 23.9701 13.2804 23.9122C13.1414 23.8542 13.0152 23.7692 12.9091 23.6622C12.8021 23.556 12.7172 23.4297 12.6593 23.2905C12.6013 23.1514 12.5715 23.0021 12.5715 22.8513C12.5715 22.7006 12.6013 22.5513 12.6593 22.4121C12.7172 22.273 12.8021 22.1466 12.9091 22.0405L18.9574 15.999Z" fill="white"/>
+              </svg>
+           </button>
+         </div>
+
+         <div class="slider__pages pages">
+          <p class="pages__text">01</p>
+          <p class="pages__text">03</p>
+         </div>
+
+       </div>
+     </section>
+     <section class="catalog">
+       <div class="catalog__inner">
+
+        <div class="catalog__information information">
+          <p class="information__remark">New collection</p>
+          <p class="information__title">Gussi light coat </p>
+          <p class="information__text">It takes you from the party to the after party
+            with its fashion-forward styles. A playfull blend
+            of retro and modern outdoor design.</p>
+        </div>
+
+        <div class="catalog__checklist">
+        <div class="catalog__colors color">
+          <fieldset class="color__group">
+            <legend class="color__legend">Color</legend>
+            <ul class="color__list">
+                <li class="color__item">
+                  <label class="color__label visually-hidden">Черный</label>
+                    <input class="color__input" type="radio" name="black" value="black" checked />
+                    <span class="color__text"></span>
+                </li>
+                <li class="color__item">
+                  <label class="color__label visually-hidden">Серый</label>
+                    <input class="color__input" type="radio" name="grey" value="grey" />
+                    <span class="color__text"></span>
+                </li>
+                <li class="color__item">
+                  <label class="color__label visually-hidden">Синий</label>
+                    <input class="color__input" type="radio" name="blue" value="blue" />
+                    <span class="color__text"></span>
+                </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="catalog__sizes size">
+          <button type="button" class="size__button">XS</button>
+          <button type="button" class="size__button size__button--active">S</button>
+          <button type="button" class="size__button">M</button>
+          <button type="button" class="size__button">L</button>
+        </div>
+
+        <div class="catalog__guide-link">
+          <a href="blank.html" target="_blank">Size guide</a>
+        </div>
+       </div>
+
+       <div class="catalog__cost">
+         <div class="catalog__counter counter">
+           <div class="counter__header">
+            <p class="counter__title">Quantity</p>
+           </div>
+           <div class="counter__buttons">
+             <button class="counter__button counter__button-minus" aria-label="кнопка минус">
+              <svg class="counter__svg counter__svg-minus" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5692 8.72998H3.43077C3.14359 8.72998 3 8.60035 3 8.34109V7.61887C3 7.35961 3.14359 7.22998 3.43077 7.22998H12.5692C12.8564 7.22998 13 7.35961 13 7.61887V8.34109C13 8.60035 12.8564 8.72998 12.5692 8.72998Z" fill="#192B3F"/>
+                </svg>
+             </button>
+             <label class="color__label visually-hidden">Цена</label>
+             <input class="counter__input" type="text" name="price">
+             <button class="counter__button counter__button-plus" aria-label="кнопка плюс">
+               <svg class="counter__svg counter__svg-plus" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.82278 7.21717H12.6203C12.8734 7.21717 13 7.34343 13 7.59596V8.40404C13 8.63973 12.8734 8.75758 12.6203 8.75758H8.82278V12.596C8.82278 12.8653 8.6962 13 8.44304 13H7.58228C7.32911 13 7.20253 12.8653 7.20253 12.596V8.75758H3.37975C3.12658 8.75758 3 8.63973 3 8.40404V7.59596C3 7.34343 3.12658 7.21717 3.37975 7.21717H7.20253V3.40404C7.20253 3.13468 7.32911 3 7.58228 3H8.44304C8.6962 3 8.82278 3.13468 8.82278 3.40404V7.21717Z" fill="#192B3F"/>
+                </svg>
+             </button>
+           </div>
+         </div>
+         <div class="catalog__price price">
+           <p class="price__title">Cost</p>
+           <p class="price__title">$120.<span>00</span></p>
+         </div>
+         </div>
+
+         <div class="catalog__details details">
+           <div class="details__information">
+             <p class="details__title">Product details</p>
+             <p class="details__text">Look out for its standout party dresses, feminine details, statement jackets and cool denim including skinny-cut jeans and cute denim shorts, which sit alongside its directional footwear and swimwear ranges.</p>
+             <p class="details__remark">63% Viscose, 37% Polyamide.</p>
+           </div>
+           <button class="details__button" type="button">Order now</button>
+         </div>
+
+         <ul class="catalog__list list">
+           <li class="list__item">
+            <h4 class="list__title">Доставка за 30 дней</h4>
+            <button class="list__button" aria-label="кнопка открыть или закрыть">
+              <svg class="list__svg list__svg-open" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.82278 7.21717H12.6203C12.8734 7.21717 13 7.34343 13 7.59596V8.40404C13 8.63973 12.8734 8.75758 12.6203 8.75758H8.82278V12.596C8.82278 12.8653 8.6962 13 8.44304 13H7.58228C7.32911 13 7.20253 12.8653 7.20253 12.596V8.75758H3.37975C3.12658 8.75758 3 8.63973 3 8.40404V7.59596C3 7.34343 3.12658 7.21717 3.37975 7.21717H7.20253V3.40404C7.20253 3.13468 7.32911 3 7.58228 3H8.44304C8.6962 3 8.82278 3.13468 8.82278 3.40404V7.21717Z" fill="#192B3F"/>
+                </svg>
+                <svg class="list__svg list__svg-close hidden" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5692 8.72998H3.43077C3.14359 8.72998 3 8.60035 3 8.34109V7.61887C3 7.35961 3.14359 7.22998 3.43077 7.22998H12.5692C12.8564 7.22998 13 7.35961 13 7.61887V8.34109C13 8.60035 12.8564 8.72998 12.5692 8.72998Z" fill="#192B3F"/>
+                  </svg>
+              </button>
+           </li>
+           <li class="catalog__item">
+            <h4 class="list__title" >Возврат в соответствии с законодательством РФ</h4>
+            <button class="list__button" aria-label="кнопка открыть или закрыть">
+              <svg class="list__svg list__svg-open" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.82278 7.21717H12.6203C12.8734 7.21717 13 7.34343 13 7.59596V8.40404C13 8.63973 12.8734 8.75758 12.6203 8.75758H8.82278V12.596C8.82278 12.8653 8.6962 13 8.44304 13H7.58228C7.32911 13 7.20253 12.8653 7.20253 12.596V8.75758H3.37975C3.12658 8.75758 3 8.63973 3 8.40404V7.59596C3 7.34343 3.12658 7.21717 3.37975 7.21717H7.20253V3.40404C7.20253 3.13468 7.32911 3 7.58228 3H8.44304C8.6962 3 8.82278 3.13468 8.82278 3.40404V7.21717Z" fill="#192B3F"/>
+                </svg>
+                <svg class="list__svg list__svg-close hidden" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5692 8.72998H3.43077C3.14359 8.72998 3 8.60035 3 8.34109V7.61887C3 7.35961 3.14359 7.22998 3.43077 7.22998H12.5692C12.8564 7.22998 13 7.35961 13 7.61887V8.34109C13 8.60035 12.8564 8.72998 12.5692 8.72998Z" fill="#192B3F"/>
+                  </svg>
+              </button>
+           </li>
+         </ul>
+
+         <div class="catalog__collection collection">
+           <h3 class="collection__header">Similar collections</h3>
+           <div class="collection__pictures">
+             <div class="collection__description">
+               <picture class="collection__picture">
+                <!--<source type="image/webp" srcset="img/catalog-image.webp, img/catalog-image@2x.webp 2x ">-->
+                <img class="collection__image" src="img/catalog-image.jpg" srcset="img/catalog-image@2x.jpg 2x" alt="картинка коллекции" widht="296" height="160">
+               </picture>
+               <div class="collection__information">
+                 <p class="collection__title">Kingsman style</p>
+                 <p class="collection__text">More silk, more freedom</p>
+               </div>
+              </div>
+              <div class="collection__description">
+                <picture class="collection__picture">
+                <!--<source type="image/webp" srcset="img/catalog-image-second.webp, img/catalog-image-second@2x.webp 2x ">-->
+                <img class="collection__image" src="img/catalog-image-second.jpg" srcset="img/catalog-image-second@2x.jpg 2x" alt="картинка коллекции" widht="296" height="160">
+                </picture>
+                <div class="collection__information">
+                  <p class="collection__title">Denim goddess</p>
+                  <p class="collection__text">More denim, more freedom</p>
+                </div>
+              </div>
+           </div>
+         </div>
+
+         <form class="catalog__form form">
+           <div class="form__header">
+             <p class="form__title">Subscribe our newsletter</p>
+             <p class="form__text">Get notified about new collections of Gussi Store</p>
+           </div>
+           <div class="form__inputs">
+            <label> <span class="visually-hidden">Имя</span>
+              <input class="form__name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" type="text" name="name" placeholder="Enter your name" required="">
+            </label>
+            <label> <span class="visually-hidden">Электронная почта</span>
+              <input class="form__email" type="email" name="email" id="email" placeholder="Enter your email" required />
+            </label>
+           </div>
+           <div class="form__radio radio">
+             <h3 class="radio__title">Choose your gender:</h3>
+             <ul class="radio__list">
+              <li class="radio__item">
+                <label class="radio__label">Male
+                  <input class="radio__input" type="radio" name="male" value="male" checked />
+                  <span class="radio__text"></span>
+                </label>
+              </li>
+              <li class="radio__item">
+                <label class="radio__label">Female
+                  <input class="radio__input" type="radio" name="female" value="female" />
+                  <span class="radio__text"></span>
+                </label>
+              </li>
+          </ul>
+           </div>
+
+           <div class="form__checkboxes checkbox">
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="checkbox" required="">
+              <span class="checkbox__text" tabindex="0">Look out for its standout party dresses, feminine details</span>
+            </label>
+           </div>
+
+           <div class="form__buttons">
+             <button class="form__button" type="button">Subscribe Gussi</button>
+           </div>
+
+         </form>
+
+       </div>
+     </section>
 
   </main>
-  <footer class="footer">
-
-  </footer>
   <section  class="modal hidden">
     <div class="modal__inner">
       <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">

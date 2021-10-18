@@ -12,13 +12,13 @@
   margin-top: 0;
   margin-bottom: 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 36px;
+  font-color: 36px;
   line-height: 51px;
   color: $white;
 }
 
 .catalog__info {
-  font-size: 16px;
+  font-color: 16px;
   line-height: 22px;
   color: $white;
   margin-bottom: 40px;
@@ -59,7 +59,7 @@
 
 .catalog__link span {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 20px;
+  font-color: 20px;
   line-height: 30px;
   width: 200px;
   max-height: 90px;
@@ -89,7 +89,7 @@
   }
 
   .catalog__title {
-    font-size: 32px;
+    font-color: 32px;
     line-height: 45px;
     //max-width: 625px;
     text-align: left;
@@ -105,7 +105,7 @@
   }
 
   .catalog__title {
-    font-size: 28px;
+    font-color: 28px;
     line-height: 39px;
     margin-bottom: 42px;
   }
@@ -120,7 +120,7 @@
   }
 
   .catalog__link span {
-    font-size: 16px;
+    font-color: 16px;
     line-height: 24px;
   }
 
