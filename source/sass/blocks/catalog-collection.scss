@@ -1,0 +1,19 @@
+.catalog__collection {
+  display: flex;
+  flex-direction: column;
+}
+
+.collection__header {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: $grey;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.collection__pictures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(227px, 1fr));
+  grid-gap: 24px;
+}
