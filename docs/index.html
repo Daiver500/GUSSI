@@ -15,10 +15,10 @@
 
 <body class="page">
 
-  <main class="main">
+  <main class="main container">
     <h1 class="visually-hidden">Страница каталога</h1>
     <section class="slider">
-      <div class="slider__inner container">
+      <div class="slider__inner">
 
         <a class="slider__logo logo" href="#" aria-label="логотип компании GUSSI">
           <picture class="logo__picture">
@@ -85,7 +85,7 @@
       </div>
     </section>
     <section class="catalog">
-      <div class="catalog__inner container">
+      <div class="catalog__inner">
 
         <div class="catalog__information information">
           <p class="information__remark">New collection</p>
@@ -241,27 +241,29 @@
             <p class="form__text">Get notified about new collections of Gussi Store</p>
           </div>
           <div class="form__inputs">
-            <label> <span class="visually-hidden">Имя</span>
-              <input class="form__name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" type="text" name="name"
+            <label class="form__label"> <span class="visually-hidden">Имя</span>
+              <input class="form__input form__name" pattern="^[A-Za-zА-Яа-яЁё\s]+$" type="text" name="name"
                 placeholder="Enter your name" required="">
             </label>
-            <label> <span class="visually-hidden">Электронная почта</span>
-              <input class="form__email" type="email" name="email" id="email" placeholder="Enter your email" required />
+            <label class="form__label"> <span class="visually-hidden">Электронная почта</span>
+              <input class="form__input form__email" type="email" name="mail" id="mail" placeholder="Enter your email" required />
             </label>
           </div>
           <div class="form__radio radio">
             <h3 class="radio__title">Choose your gender:</h3>
             <ul class="radio__list">
               <li class="radio__item">
-                <label class="radio__label">Male
+                <label class="radio__label">
                   <input class="radio__input" type="radio" name="radio" value="male" checked />
                   <span class="radio__text"></span>
+                  Male
                 </label>
               </li>
               <li class="radio__item">
-                <label class="radio__label">Female
+                <label class="radio__label">
                   <input class="radio__input" type="radio" name="radio" value="female" />
                   <span class="radio__text"></span>
+                  Female
                 </label>
               </li>
             </ul>
@@ -269,7 +271,7 @@
 
           <div class="form__checkboxes checkbox">
             <label class="checkbox__label">
-              <input class="checkbox__input" type="checkbox" name="checkbox" required="">
+              <input class="checkbox__input" type="checkbox" name="checkbox" required="" checked>
               <span class="checkbox__text" tabindex="0">Look out for its standout party dresses, feminine details</span>
             </label>
           </div>
