@@ -1,7 +1,7 @@
 .modal__inner,
 .modal-success__inner {
   display: flex;
-  width: 490px;
+  width: 460px;
   min-height: 605px;
   position: relative;
   top: calc(50% - 295px);
@@ -27,6 +27,7 @@
   bottom: 0;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Rajdhani", "Arial", sans-serif;
 }
 
 .modal__data {
@@ -39,16 +40,14 @@
 .modal__header,
 .modal__text {
   margin-top: 0;
-  color: $white;
+  color: $grey;
   text-align: left;
 }
 
 .modal__header {
   margin-bottom: 20px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 28px;
   line-height: 39px;
-  color: $white;
 }
 
 .modal__text {
@@ -58,46 +57,42 @@
   max-width: 380px;
 }
 
-.modal__form input,
-.modal__form textarea {
+.modal__input,
+.modal__textarea {
   padding: 16px;
   margin-bottom: 30px;
   min-width: 380px;
-  background-color: $black;
+  background-color: $disabled;
   border: 0;
-  color: $white;
+  color: $grey;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .modal__form textarea {
   resize: none;
 }
 
-.modal__form input::placeholder,
-.modal__form textarea::placeholder {
-  color: $white;
-  font-size: 16px;
-  line-height: 21px;
-}
-
 .modal__form button {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: $white;
-  text-transform: uppercase;
-  background-color: inherit;
-  border: 1px solid $black;
-  border-radius: 10px;
-  padding: 14px 45px;
+  background-color: $vio;
+  font-size: 24px;
+  line-height: 32px;
+  border: 0;
   cursor: pointer;
-  margin-bottom: 34px;
+  margin-bottom: 15px;
 }
 
-.modal__form button:hover,
-.modal__form button:focus {
-  background-color: $white;
-  color: $black;
+.modal__button:hover,
+.modal__button:focus {
+  background-color: $medium-blue;
+}
+
+.modal__button:active {
+  background-color: $light-blue;
 }
 
 .modal-success__title {
@@ -108,7 +103,7 @@
 }
 
 .modal-success__text {
-  color: $white;
+  color: $grey;
   font-size: 24px;
   line-height: 31px;
 }
@@ -131,11 +126,11 @@
   position: relative;
   min-height: 16px;
   cursor: pointer;
-  color: $white;
+  color: $grey;
   font-size: 14px;
   line-height: 16px;
   padding-left: 30px;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
 }
 
@@ -147,8 +142,8 @@
 
 .modal__checkbox-text {
   position: absolute;
-  width: 18px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   left: 0;
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
@@ -168,22 +163,6 @@
   display: none;
 }
 
-.modal input:hover,
-.modal textarea:hover,
-.modal input:focus,
-.modal textarea:focus {
-  border: 1px solid $black;
-}
-
-.modal input:hover,
-.modal input:focus {
-  max-height: 50px;
-}
-
-.modal textarea:hover,
-.modal textarea:focus {
-  max-height: 142px;
-}
 
 @media (max-width: $max-tablet-width) {
   .modal__inner,
