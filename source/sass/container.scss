@@ -1,5 +1,5 @@
 .container {
-  max-width: 1920px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -12,6 +12,6 @@
 
 @media (max-width: $max-mobile-width) {
   .container {
-    max-width: 767px;
+    max-width: 719px;
   }
 }

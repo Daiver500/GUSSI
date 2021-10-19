@@ -12,7 +12,7 @@
   text-align: center;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   z-index: 2;
-  background-color: $orange;
+  background-color: $white;
 }
 
 .modal,
@@ -46,14 +46,14 @@
 .modal__header {
   margin-bottom: 20px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-color: 28px;
+  font-size: 28px;
   line-height: 39px;
   color: $white;
 }
 
 .modal__text {
   margin-bottom: 51px;
-  font-color: 16px;
+  font-size: 16px;
   line-height: 22px;
   max-width: 380px;
 }
@@ -63,31 +63,31 @@
   padding: 16px;
   margin-bottom: 30px;
   min-width: 380px;
-  background-color: $light-orange;
+  background-color: $black;
   border: 0;
   color: $white;
 }
 
 .modal__form textarea {
-  recolor: none;
+  resize: none;
 }
 
 .modal__form input::placeholder,
 .modal__form textarea::placeholder {
   color: $white;
-  font-color: 16px;
+  font-size: 16px;
   line-height: 21px;
 }
 
 .modal__form button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
-  font-color: 14px;
+  font-size: 14px;
   line-height: 16px;
   color: $white;
   text-transform: uppercase;
   background-color: inherit;
-  border: 1px solid $white;
+  border: 1px solid $black;
   border-radius: 10px;
   padding: 14px 45px;
   cursor: pointer;
@@ -97,7 +97,7 @@
 .modal__form button:hover,
 .modal__form button:focus {
   background-color: $white;
-  color: $blue;
+  color: $black;
 }
 
 .modal-success__title {
@@ -109,7 +109,7 @@
 
 .modal-success__text {
   color: $white;
-  font-color: 24px;
+  font-size: 24px;
   line-height: 31px;
 }
 
@@ -132,7 +132,7 @@
   min-height: 16px;
   cursor: pointer;
   color: $white;
-  font-color: 14px;
+  font-size: 14px;
   line-height: 16px;
   padding-left: 30px;
   align-items: flex-start;
@@ -199,7 +199,7 @@
 
   .modal__text {
     margin-bottom: 51px;
-    font-color: 16px;
+    font-size: 16px;
     line-height: 22px;
     max-width: 320px;
   }

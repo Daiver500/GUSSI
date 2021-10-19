@@ -18,12 +18,12 @@
   <main class="main">
     <h1 class="visually-hidden">Страница каталога</h1>
     <section class="slider">
-      <div class="slider__inner">
+      <div class="slider__inner container">
 
         <a class="slider__logo logo" href="#" aria-label="логотип компании GUSSI">
           <picture class="logo__picture">
             <!--<source type="image/webp" srcset="img/logo.webp, img/logo@2x.webp 2x ">-->
-            <img class="logo__image" src="img/logo.jpg" srcset="img/logo@2x.jpg 2x" alt="логтип компании GUSSI"
+            <img class="logo__image" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="логтип компании GUSSI"
               width="95" height="53">
           </picture>
         </a>
@@ -35,14 +35,14 @@
               alt="картинка слайдера" width="600" height="768">
           </picture>
         </div>
-        <div class="slider__description">
+        <div class="slider__description hidden">
           <picture class="slider__picture">
             <!--<source type="image/webp" srcset="img/slider-second.webp, img/slider-second@2x.webp 2x ">-->
             <img class="slider__image" src="img/slider-second.jpg" srcset="img/slider-second@2x.jpg 2x"
               alt="картинка слайдера" width="600" height="768">
           </picture>
         </div>
-        <div class="slider__description">
+        <div class="slider__description hidden">
           <picture class="slider__picture">
             <!--<source type="image/webp" srcset="img/slider-third.webp, img/slider-third@2x.webp 2x ">-->
             <img class="slider__image" src="img/slider-third.jpg" srcset="img/slider-third@2x.jpg 2x"
@@ -50,18 +50,19 @@
           </picture>
         </div>
 
-        <div class="slider__information">
+        <div class="slider__information-wrapper">
+        <div class="slider__information-header">
           <p class="slider__title">Light coat</p>
           <p class="slider__text">More cotton, more freedom</p>
         </div>
-
+        <div class="slider__buttons-wrapper">
         <div class="slider__buttons">
           <button class="slider__button slider__button-left" aria-label="кнопка влево">
             <svg class="slider__svg-left" width="32" height="32" viewBox="0 0 32 32" fill="currentColor"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13.0426 15.999L19.0909 9.95758C19.1973 9.8511 19.2817 9.72468 19.3393 9.58556C19.3969 9.44643 19.4266 9.29731 19.4266 9.14672C19.4266 8.99613 19.3969 8.84702 19.3393 8.70789C19.2817 8.56876 19.1973 8.44235 19.0909 8.33587C18.9845 8.22938 18.8582 8.14492 18.7192 8.08729C18.5802 8.02966 18.4312 8 18.2807 8C18.1302 8 17.9812 8.02966 17.8422 8.08729C17.7032 8.14492 17.5768 8.22938 17.4704 8.33587L10.6232 15.1882C10.5162 15.2943 10.4313 15.4206 10.3734 15.5598C10.3155 15.699 10.2856 15.8483 10.2856 15.999C10.2856 16.1498 10.3155 16.2991 10.3734 16.4382C10.4313 16.5774 10.5162 16.7037 10.6232 16.8099L17.4704 23.6622C17.5765 23.7692 17.7027 23.8542 17.8418 23.9122C17.9809 23.9701 18.13 24 18.2807 24C18.4313 24 18.5805 23.9701 18.7196 23.9122C18.8586 23.8542 18.9848 23.7692 19.0909 23.6622C19.1979 23.556 19.2828 23.4297 19.3407 23.2905C19.3987 23.1514 19.4285 23.0021 19.4285 22.8513C19.4285 22.7006 19.3987 22.5513 19.3407 22.4121C19.2828 22.273 19.1979 22.1466 19.0909 22.0405L13.0426 15.999Z"
-                fill="white" />
+                fill="currentColor" />
             </svg>
           </button>
           <button class="slider__button slider__button-right" aria-label="кнопка вправо">
@@ -69,20 +70,22 @@
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M18.9574 15.999L12.9091 9.95758C12.8027 9.8511 12.7183 9.72468 12.6607 9.58556C12.6031 9.44643 12.5734 9.29731 12.5734 9.14672C12.5734 8.99613 12.6031 8.84702 12.6607 8.70789C12.7183 8.56876 12.8027 8.44235 12.9091 8.33587C13.0155 8.22938 13.1418 8.14492 13.2808 8.08729C13.4198 8.02966 13.5688 8 13.7193 8C13.8698 8 14.0188 8.02966 14.1578 8.08729C14.2968 8.14492 14.4232 8.22938 14.5296 8.33587L21.3768 15.1882C21.4838 15.2943 21.5687 15.4206 21.6266 15.5598C21.6845 15.699 21.7144 15.8483 21.7144 15.999C21.7144 16.1498 21.6845 16.2991 21.6266 16.4382C21.5687 16.5774 21.4838 16.7037 21.3768 16.8099L14.5296 23.6622C14.4235 23.7692 14.2973 23.8542 14.1582 23.9122C14.0191 23.9701 13.87 24 13.7193 24C13.5687 24 13.4195 23.9701 13.2804 23.9122C13.1414 23.8542 13.0152 23.7692 12.9091 23.6622C12.8021 23.556 12.7172 23.4297 12.6593 23.2905C12.6013 23.1514 12.5715 23.0021 12.5715 22.8513C12.5715 22.7006 12.6013 22.5513 12.6593 22.4121C12.7172 22.273 12.8021 22.1466 12.9091 22.0405L18.9574 15.999Z"
-                fill="white" />
+                fill="currentColor" />
             </svg>
           </button>
         </div>
-
         <div class="slider__pages pages">
           <p class="pages__text">01</p>
+          <p class="pages__text">-</p>
           <p class="pages__text">03</p>
+        </div>
+        </div>
         </div>
 
       </div>
     </section>
     <section class="catalog">
-      <div class="catalog__inner">
+      <div class="catalog__inner container">
 
         <div class="catalog__information information">
           <p class="information__remark">New collection</p>
@@ -94,44 +97,35 @@
 
         <div class="catalog__checklist">
           <div class="catalog__colors color">
-            <fieldset class="color__group">
-              <legend class="color__legend">Color</legend>
-              <ul class="color__list">
-                <li class="color__item">
-                  <label class="color__label visually-hidden">Черный</label>
-                  <input class="color__input" type="radio" name="black" value="black" checked />
-                  <span class="color__text"></span>
-                </li>
-                <li class="color__item">
-                  <label class="color__label visually-hidden">Серый</label>
-                  <input class="color__input" type="radio" name="grey" value="grey" />
-                  <span class="color__text"></span>
-                </li>
-                <li class="color__item">
-                  <label class="color__label visually-hidden">Синий</label>
-                  <input class="color__input" type="radio" name="blue" value="blue" />
-                  <span class="color__text"></span>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="color__group">
+              <h3 class="color__header">Color</h3>
+              <div class="color__list">
+               <button class="color__button color__button-black color__button--active" type="button" aria-label="кнопка выбора цвета черный">
+               <button class="color__button color__button-grey" type="button" aria-label="кнопка выбора цвета серый">
+               <button class="color__button color__button-blue" type="button" aria-label="кнопка выбора цвета синий">
+              </div>
+            </div>
           </div>
 
           <div class="catalog__sizes size">
+            <h3 class="size__header">Size</h3>
+            <div class="size__buttons-wrapper">
             <button type="button" class="size__button">XS</button>
             <button type="button" class="size__button size__button--active">S</button>
             <button type="button" class="size__button">M</button>
             <button type="button" class="size__button">L</button>
+            </div>
           </div>
 
-          <div class="catalog__guide-link">
-            <a href="blank.html" target="_blank">Size guide</a>
+          <div class="catalog__guide">
+            <a class="catalog__guide-link" href="blank.html" target="_blank">Size guide</a>
           </div>
         </div>
 
         <div class="catalog__cost">
           <div class="catalog__counter counter">
             <div class="counter__header">
-              <p class="counter__title">Quantity</p>
+              <h3 class="counter__title">Quantity</h3>
             </div>
             <div class="counter__buttons">
               <button class="counter__button counter__button-minus" aria-label="кнопка минус">
@@ -143,8 +137,8 @@
                 </svg>
               </button>
               <label class="counter__label visually-hidden">Цена</label>
-              <input class="counter__input" type="text" name="price">
-              <button class="counter__button counter__button-plus" aria-label="кнопка плюс">
+              <input class="counter__input" type="number" name="price" min="1" max="100" step="1" value="1">
+              <button class="counter__button counter__button-plus counter__button--active" aria-label="кнопка плюс">
                 <svg class="counter__svg counter__svg-plus" width="16" height="16" viewBox="0 0 16 16"
                   fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -155,8 +149,8 @@
             </div>
           </div>
           <div class="catalog__price price">
-            <p class="price__title">Cost</p>
-            <p class="price__title">$120.<span>00</span></p>
+            <h3 class="price__title">Cost</h3>
+            <p class="price__text">$120<span>.00</span></p>
           </div>
         </div>
 
@@ -173,7 +167,9 @@
 
         <ul class="catalog__list list">
           <li class="list__item">
-            <h4 class="list__title">Доставка за 30 дней</h4>
+            <h3 class="list__title">Delivery</h3>
+            <p class="list__text hidden">Delivered on or before Monday, 25 February 2019
+              Note: Subject to placing your order before specific cut-off times. Details available in checkout.For free delivery – spend over £18.08</p>
             <button class="list__button" aria-label="кнопка открыть или закрыть">
               <svg class="list__svg list__svg-open" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
@@ -190,7 +186,10 @@
             </button>
           </li>
           <li class="catalog__item">
-            <h4 class="list__title">Возврат в соответствии с законодательством РФ</h4>
+            <h3 class="list__title">Return</h3>
+            <p class="list__text hidden">Return through your local Boxberry store available in over 2,300 locations.
+              You can create your return on the carrier website by clicking the create return link.
+              Open 7 days a week, early until late.</p>
             <button class="list__button" aria-label="кнопка открыть или закрыть">
               <svg class="list__svg list__svg-open" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">

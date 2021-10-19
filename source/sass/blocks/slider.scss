@@ -1,0 +1,103 @@
+.slider {
+  max-width: 600px;
+}
+
+.slider__inner {
+  padding: 0;
+  position: relative;
+}
+
+.slider__logo {
+  position: absolute;
+  top: 32px;
+  left: 52px;
+}
+
+.logo__image {
+  width: 95px;
+  height: 53px;
+  background-color: transparent;
+}
+
+.slider__image {
+  width: 600px;
+  max-height: 768px;
+}
+
+.slider__information-wrapper {
+  position: absolute;
+  bottom: 52px;
+  left: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__buttons-wrapper,
+.slider__pages {
+  display: flex;
+}
+
+.slider__buttons-wrapper {
+  justify-content: space-between;
+  max-width: 200px;
+  align-items: center;
+}
+
+.slider__information-header {
+  margin-bottom: 32px;
+}
+
+.slider__title,
+.slider__text {
+  margin-top: 0;
+  color: $white;
+}
+
+.slider__title {
+  margin-bottom: 5px;
+  font-size: 72px;
+  line-height: 72px;
+}
+
+.slider__text {
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+
+.slider__buttons {
+  max-height: 32px;
+}
+
+.slider__button {
+  max-height: 32px;
+  max-width: 32px;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: $white;
+}
+
+.slider__button:hover,
+.slider__button:focus {
+  border: 1px solid $white;
+  border-radius: 20px;
+}
+
+.slider__button:active,
+.slider__button--active {
+  background-color: $white;
+  color: $grey;
+}
+
+.pages__text {
+  margin: 0;
+  color: $white;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.pages__text:not(:last-child) {
+  padding-right: 5px;
+}
