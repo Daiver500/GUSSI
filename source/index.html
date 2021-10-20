@@ -15,7 +15,7 @@
 
 <body class="page">
 
-  <main class="main container">
+  <main class="main">
     <h1 class="visually-hidden">Catalog page</h1>
     <section class="slider">
       <div class="slider__inner">
@@ -30,6 +30,8 @@
 
         <div class="slider__description">
           <picture class="slider__picture">
+            <!--<source type="image/webp" media="(max-width:1023px)" srcset="img/slider-first-tablet.webp, img/slider-first-tablet@2x.webp 2x" />-->
+            <source media="(max-width:1023px)" srcset="img/slider-first-tablet.jpg, img/slider-first-tablet@2x.jpg 2x" />
             <!--<source type="image/webp" srcset="img/slider-first.webp, img/slider-first@2x.webp 2x ">-->
             <img class="slider__image" src="img/slider-first.jpg" srcset="img/slider-first@2x.jpg 2x" alt="slider image"
               width="600" height="768">

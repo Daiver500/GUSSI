@@ -129,6 +129,8 @@
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
   padding-left: 25px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .checkbox__input:checked + .checkbox__text {
@@ -160,4 +162,10 @@
 
 .form__button:active {
   background-color: $light-blue;
+}
+
+@media (max-width: $max-tablet-width) {
+  .form__input {
+    min-width: 456px;
+  }
 }

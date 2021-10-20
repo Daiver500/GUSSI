@@ -1,5 +1,5 @@
 .catalog {
-  width: 50%;
+  max-width: 760px;
 }
 
 .catalog__inner {
@@ -329,6 +329,8 @@
 
 .list__title {
   margin: 0;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .list__item:not(:last-child) {
@@ -347,4 +349,36 @@
   right: 0;
   top: 0;
   cursor: pointer;
+}
+
+@media (max-width: $max-tablet-width) {
+  .catalog {
+    max-width: 100%;
+  }
+
+  .catalog__inner {
+    margin-top: 0;
+  }
+
+  .information__remark {
+    margin-bottom: 16px;
+  }
+
+  .catalog__information {
+    margin-bottom: 28px;
+    max-width: 100%;
+  }
+
+  .catalog__checklist {
+    margin-bottom: 36px;
+  }
+
+  .catalog__cost {
+    margin-bottom: 32px;
+  }
+
+  .details__information,
+  .catalog__details {
+    margin-bottom: 40px;
+  }
 }
