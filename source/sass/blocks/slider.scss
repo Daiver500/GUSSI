@@ -133,3 +133,25 @@
     font-size: 24px;
   }
 }
+
+@media (max-width: $max-mobile-width) {
+  .slider {
+    max-width: 767px;
+  }
+
+  .slider__image {
+    max-height: 600px;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .slider__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .slider__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

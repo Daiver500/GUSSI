@@ -45,6 +45,8 @@ body {
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 @media (max-width: $max-tablet-width) {
