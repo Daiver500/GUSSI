@@ -126,7 +126,7 @@
                 </svg>
               </button>
               <label class="counter__label visually-hidden">Price</label>
-              <input class="counter__input" type="number" name="price" min="1" max="100" step="1" value="1">
+              <input class="counter__input" type="number" name="price" min="1" max="100" step="1">
               <button class="counter__button counter__button-plus counter__button--active" aria-label="plus button">
                 <svg class="counter__svg counter__svg-plus" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.82278 7.21717H12.6203C12.8734 7.21717 13 7.34343 13 7.59596V8.40404C13 8.63973 12.8734 8.75758 12.6203 8.75758H8.82278V12.596C8.82278 12.8653 8.6962 13 8.44304 13H7.58228C7.32911 13 7.20253 12.8653 7.20253 12.596V8.75758H3.37975C3.12658 8.75758 3 8.63973 3 8.40404V7.59596C3 7.34343 3.12658 7.21717 3.37975 7.21717H7.20253V3.40404C7.20253 3.13468 7.32911 3 7.58228 3H8.44304C8.6962 3 8.82278 3.13468 8.82278 3.40404V7.21717Z" fill="#192B3F"></path>
@@ -136,7 +136,7 @@
           </div>
           <div class="catalog__price price">
             <h3 class="price__title">Cost</h3>
-            <p class="price__text">$120<span>.00</span></p>
+            <p class="price__text">$<span class="price__amount">120</span><span class="price__zeros">.00</span></p>
           </div>
         </div>
 
@@ -154,30 +154,20 @@
         <ul class="catalog__list list">
           <li class="list__item">
             <h3 class="list__title">Delivery</h3>
-            <p class="list__text hidden">Delivered on or before Monday, 25 February 2019
+            <p class="list__text">Delivered on or before Monday, 25 February 2019
               Note: Subject to placing your order before specific cut-off times. Details available in checkout.For free
               delivery – spend over £18.08</p>
             <button class="list__button" aria-label="open close button">
-              <svg class="list__svg list__svg-open" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.82278 7.21717H12.6203C12.8734 7.21717 13 7.34343 13 7.59596V8.40404C13 8.63973 12.8734 8.75758 12.6203 8.75758H8.82278V12.596C8.82278 12.8653 8.6962 13 8.44304 13H7.58228C7.32911 13 7.20253 12.8653 7.20253 12.596V8.75758H3.37975C3.12658 8.75758 3 8.63973 3 8.40404V7.59596C3 7.34343 3.12658 7.21717 3.37975 7.21717H7.20253V3.40404C7.20253 3.13468 7.32911 3 7.58228 3H8.44304C8.6962 3 8.82278 3.13468 8.82278 3.40404V7.21717Z" fill="#192B3F"></path>
-              </svg>
-              <svg class="list__svg list__svg-close hidden" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.5692 8.72998H3.43077C3.14359 8.72998 3 8.60035 3 8.34109V7.61887C3 7.35961 3.14359 7.22998 3.43077 7.22998H12.5692C12.8564 7.22998 13 7.35961 13 7.61887V8.34109C13 8.60035 12.8564 8.72998 12.5692 8.72998Z" fill="#192B3F"></path>
-              </svg>
+
             </button>
           </li>
           <li class="list__item">
             <h3 class="list__title">Return</h3>
-            <p class="list__text hidden">Return through your local Boxberry store available in over 2,300 locations.
+            <p class="list__text">Return through your local Boxberry store available in over 2,300 locations.
               You can create your return on the carrier website by clicking the create return link.
               Open 7 days a week, early until late.</p>
             <button class="list__button" aria-label="open close button">
-              <svg class="list__svg list__svg-open" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.82278 7.21717H12.6203C12.8734 7.21717 13 7.34343 13 7.59596V8.40404C13 8.63973 12.8734 8.75758 12.6203 8.75758H8.82278V12.596C8.82278 12.8653 8.6962 13 8.44304 13H7.58228C7.32911 13 7.20253 12.8653 7.20253 12.596V8.75758H3.37975C3.12658 8.75758 3 8.63973 3 8.40404V7.59596C3 7.34343 3.12658 7.21717 3.37975 7.21717H7.20253V3.40404C7.20253 3.13468 7.32911 3 7.58228 3H8.44304C8.6962 3 8.82278 3.13468 8.82278 3.40404V7.21717Z" fill="#192B3F"></path>
-              </svg>
-              <svg class="list__svg list__svg-close hidden" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.5692 8.72998H3.43077C3.14359 8.72998 3 8.60035 3 8.34109V7.61887C3 7.35961 3.14359 7.22998 3.43077 7.22998H12.5692C12.8564 7.22998 13 7.35961 13 7.61887V8.34109C13 8.60035 12.8564 8.72998 12.5692 8.72998Z" fill="#192B3F"></path>
-              </svg>
+
             </button>
           </li>
         </ul>
@@ -251,10 +241,7 @@
               <span class="checkbox__text" tabindex="0">Look out for its standout party dresses, feminine details</span>
             </label>
           </div>
-
-          <div class="form__buttons">
-            <button class="form__button" type="button">Subscribe Gussi</button>
-          </div>
+          <button class="form__button" type="submit">Subscribe Gussi</button>
 
         </form>
 
@@ -279,7 +266,7 @@
           </label>
           <div class="modal__lowerpart">
             <label class="modal__checkbox-label checkbox-toggle">
-              <input class="modal__checkbox" type="checkbox" name="check" required="">
+              <input class="modal__checkbox" type="checkbox" name="check" checked="" required="">
               <span class="modal__checkbox-text" tabindex="0"></span>
               I agree to send my personal data
             </label>
@@ -289,7 +276,7 @@
       </form>
       <button class="modal__close" type="button" aria-label="Закрыть модальное окно">
         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146522 0.853553C-0.04874 0.658291 -0.04874 0.341709 0.146522 0.146447C0.341784 -0.0488155 0.658367 -0.0488156 0.853629 0.146447L8.27821 7.57103L15.7028 0.14645C15.8981 -0.0488124 16.2146 -0.0488125 16.4099 0.14645C16.6052 0.341712 16.6052 0.658294 16.4099 0.853556L8.98532 8.27814L16.41 15.7028C16.6052 15.8981 16.6052 16.2146 16.41 16.4099C16.2147 16.6052 15.8981 16.6052 15.7029 16.4099L8.27821 8.98525L0.853553 16.4099C0.658291 16.6052 0.341709 16.6052 0.146447 16.4099C-0.0488155 16.2146 -0.0488156 15.8981 0.146447 15.7028L7.57111 8.27814L0.146522 0.853553Z" fill="white"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146522 0.853553C-0.04874 0.658291 -0.04874 0.341709 0.146522 0.146447C0.341784 -0.0488155 0.658367 -0.0488156 0.853629 0.146447L8.27821 7.57103L15.7028 0.14645C15.8981 -0.0488124 16.2146 -0.0488125 16.4099 0.14645C16.6052 0.341712 16.6052 0.658294 16.4099 0.853556L8.98532 8.27814L16.41 15.7028C16.6052 15.8981 16.6052 16.2146 16.41 16.4099C16.2147 16.6052 15.8981 16.6052 15.7029 16.4099L8.27821 8.98525L0.853553 16.4099C0.658291 16.6052 0.341709 16.6052 0.146447 16.4099C-0.0488155 16.2146 -0.0488156 15.8981 0.146447 15.7028L7.57111 8.27814L0.146522 0.853553Z" fill="currentColor"></path>
         </svg>
       </button>
     </div>
@@ -301,7 +288,7 @@
       </div>
       <button class="modal-success__close" type="button" aria-label="Закрыть модальное окно">
         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146522 0.853553C-0.04874 0.658291 -0.04874 0.341709 0.146522 0.146447C0.341784 -0.0488155 0.658367 -0.0488156 0.853629 0.146447L8.27821 7.57103L15.7028 0.14645C15.8981 -0.0488124 16.2146 -0.0488125 16.4099 0.14645C16.6052 0.341712 16.6052 0.658294 16.4099 0.853556L8.98532 8.27814L16.41 15.7028C16.6052 15.8981 16.6052 16.2146 16.41 16.4099C16.2147 16.6052 15.8981 16.6052 15.7029 16.4099L8.27821 8.98525L0.853553 16.4099C0.658291 16.6052 0.341709 16.6052 0.146447 16.4099C-0.0488155 16.2146 -0.0488156 15.8981 0.146447 15.7028L7.57111 8.27814L0.146522 0.853553Z" fill="white"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146522 0.853553C-0.04874 0.658291 -0.04874 0.341709 0.146522 0.146447C0.341784 -0.0488155 0.658367 -0.0488156 0.853629 0.146447L8.27821 7.57103L15.7028 0.14645C15.8981 -0.0488124 16.2146 -0.0488125 16.4099 0.14645C16.6052 0.341712 16.6052 0.658294 16.4099 0.853556L8.98532 8.27814L16.41 15.7028C16.6052 15.8981 16.6052 16.2146 16.41 16.4099C16.2147 16.6052 15.8981 16.6052 15.7029 16.4099L8.27821 8.98525L0.853553 16.4099C0.658291 16.6052 0.341709 16.6052 0.146447 16.4099C-0.0488155 16.2146 -0.0488156 15.8981 0.146447 15.7028L7.57111 8.27814L0.146522 0.853553Z" fill="currentColor"></path>
         </svg>
       </button>
     </div>

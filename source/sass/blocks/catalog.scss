@@ -214,7 +214,7 @@
   color: $bronze;
 }
 
-.price__text span {
+.price__zeros {
   font-size: 28px;
   line-height: 40px;
   color: $grey;
@@ -232,6 +232,7 @@
   width: 31px;
   height: 31px;
   text-align: center;
+  background-color: $white;
 }
 
 .counter__input::-webkit-outer-spin-button,
@@ -364,6 +365,13 @@
 
 .list__text {
   margin: 0;
+  height: 0;                                  // нулевая высота для скрытия текста аккордеона
+  overflow: hidden;
+}
+
+.list__item.list__item--active .list__text {  // стили для аккордеона (при статусе active у текста появляется высота, изначально нулевая)
+  height: 70px;
+  overflow: visible;
 }
 
 .list__button {
@@ -374,6 +382,14 @@
   right: 0;
   top: 0;
   cursor: pointer;
+  background-image: url("../img/plus-icon.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.list__item.list__item--active .list__button {      // стили для аккордеона (при статусе --active у кнопки меняется background)
+  background-image: url("../img/minus-icon.svg");
 }
 
 @media (max-width: $max-tablet-width) {

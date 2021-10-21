@@ -3,7 +3,7 @@
   display: flex;
   width: 460px;
   min-height: 605px;
-  position: relative;
+  position: fixed;
   top: calc(50% - 295px);
   right: 0;
   left: 0;
@@ -17,7 +17,7 @@
 
 .modal,
 .modal-success {
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -118,6 +118,7 @@
   border: none;
   background-color: inherit;
   cursor: pointer;
+  color: $black;
 }
 
 .modal__checkbox-label {
