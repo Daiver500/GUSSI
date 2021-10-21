@@ -470,4 +470,9 @@
   .details__information::before {
     top: -370px;
   }
+
+  .list__item.list__item--active .list__text {
+    height: 125px;
+    overflow: visible;
+  }
 }

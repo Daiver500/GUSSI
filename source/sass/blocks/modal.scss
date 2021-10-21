@@ -168,7 +168,6 @@
 @media (max-width: $max-tablet-width) {
   .modal__inner,
   .modal-success__inner {
-    width: 100%;
     justify-content: center;
   }
 
@@ -187,5 +186,12 @@
   .modal__form input,
   .modal__form textarea {
     min-width: 280px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .modal__inner,
+  .modal-success__inner {
+    width: 100%;
   }
 }
