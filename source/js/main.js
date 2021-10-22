@@ -16,7 +16,7 @@ const openModal = () => {
     document.addEventListener("keyup", escPressHandler);
     document.addEventListener("click", windowClickHandler);
     modalForm.addEventListener("submit", submitForm);
-    body.style.position = "fixed";
+    body.style.overflow = "hidden";
 }
 
 const closeModal = () => {
@@ -26,7 +26,7 @@ const closeModal = () => {
     document.removeEventListener("click", windowClickHandler);
     modalForm.removeEventListener("submit", submitForm);
     modalForm.reset();
-    body.style.position = "";
+    body.style.overflow = "visible";
 }
 
 const escPressHandler = (evt) => {
@@ -55,7 +55,7 @@ const openSuccessModal = () => {
     closeSuccessModalButton.addEventListener("click", closeSuccessModal);
     document.addEventListener("keyup", escPressHandler);
     document.addEventListener("click", windowClickHandler);
-    body.style.position = "fixed";
+    body.style.overflow = "hidden";
 }
 
 const closeSuccessModal = () => {
@@ -63,7 +63,7 @@ const closeSuccessModal = () => {
     closeSuccessModalButton.removeEventListener("click", closeSuccessModal);
     document.addEventListener("keyup", escPressHandler);
     document.addEventListener("click", windowClickHandler);
-    body.style.position = "";
+    body.style.overflow = "visible";
 }
 
 const submitForm = (evt) => {

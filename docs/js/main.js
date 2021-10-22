@@ -8,6 +8,7 @@ const closeSuccessModalButton = document.querySelector(".modal-success__close");
 const modal = document.querySelector(".modal");
 const modalForm = document.querySelector(".modal__form");
 const modalSuccess = document.querySelector(".modal-success");
+const body = document.querySelector(".page")
 
 const openModal = () => {
     modal.classList.remove("hidden");
@@ -15,6 +16,7 @@ const openModal = () => {
     document.addEventListener("keyup", escPressHandler);
     document.addEventListener("click", windowClickHandler);
     modalForm.addEventListener("submit", submitForm);
+    body.style.overflow = "hidden";
 }
 
 const closeModal = () => {
@@ -24,6 +26,7 @@ const closeModal = () => {
     document.removeEventListener("click", windowClickHandler);
     modalForm.removeEventListener("submit", submitForm);
     modalForm.reset();
+    body.style.overflow = "visible";
 }
 
 const escPressHandler = (evt) => {
@@ -52,6 +55,7 @@ const openSuccessModal = () => {
     closeSuccessModalButton.addEventListener("click", closeSuccessModal);
     document.addEventListener("keyup", escPressHandler);
     document.addEventListener("click", windowClickHandler);
+    body.style.overflow = "hidden";
 }
 
 const closeSuccessModal = () => {
@@ -59,6 +63,7 @@ const closeSuccessModal = () => {
     closeSuccessModalButton.removeEventListener("click", closeSuccessModal);
     document.addEventListener("keyup", escPressHandler);
     document.addEventListener("click", windowClickHandler);
+    body.style.overflow = "visible";
 }
 
 const submitForm = (evt) => {
