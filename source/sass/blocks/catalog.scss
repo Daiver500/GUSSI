@@ -369,8 +369,8 @@
   overflow: hidden;
 }
 
-.list__item.list__item--active .list__text {  // стили для аккордеона (при статусе active у текста появляется высота, изначально нулевая)
-  height: 70px;
+.list__item.list__item--active .list__text {  // стили для аккордеона (при наличии класа --active у текста появляется высота, изначально нулевая)
+  height: 47px;
   overflow: visible;
 }
 
@@ -388,7 +388,7 @@
   height: 25px;
 }
 
-.list__item.list__item--active .list__button {      // стили для аккордеона (при статусе --active у кнопки меняется background)
+.list__item.list__item--active .list__button {      // стили для аккордеона (при наличии класса --active у кнопки меняется background)
   background-image: url("../img/minus-icon.svg");
 }
 
