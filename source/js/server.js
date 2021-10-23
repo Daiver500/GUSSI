@@ -92,3 +92,7 @@ const showThanksModal = (message) => {                                    // —Å—
   document.addEventListener("click", windowClickHandler);
 }
 
+
+
+
+
