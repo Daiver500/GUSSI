@@ -7,7 +7,7 @@ const accordionWrapper = document.querySelector(".catalog__list");
 
 const serverRequest = () => {                           // работа с данными сервера
     const request = new XMLHttpRequest();
-    request.open(`GET`, "js/current.json");
+    request.open(`GET`, "https://jsonplaceholder.typicode.com/posts/1/comments");
     request.setRequestHeader("Content-type", "application/json; charset=utf-8");
     request.send();
     const checkStateReadiness = () => {
@@ -44,8 +44,8 @@ const createElement = (item) => {
     const newElement = document.createElement("li");
     newElement.classList.add("list__item");
     newElement.innerHTML = `
-    <h3 class="list__title">${item.title}</h3>
-    <p class="list__text">${item.text}</p>
+    <h3 class="list__title">${item.name}</h3>
+    <p class="list__text">${item.body}</p>
     <button class="list__button" aria-label="open close button">
     `
     accordionWrapper.append(newElement);
