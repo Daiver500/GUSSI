@@ -115,7 +115,7 @@ const build = () => gulp.series (
   images,
   //sprite,
   htmlinclude,
-  imageswebp,
+  imageswebp
 );
 
 exports.build = build();

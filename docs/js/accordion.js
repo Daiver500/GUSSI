@@ -5,7 +5,7 @@
 let accordionItems;                    // пустая переменная для будущих элементов
 const accordionWrapper = document.querySelector(".catalog__list");
 
-/*const serverRequest = () => {                           // работа с данными сервера
+const serverRequest = () => {                           // работа с данными сервера
     const request = new XMLHttpRequest();
     request.open(`GET`, "js/current.json");
     request.setRequestHeader("Content-type", "application/json; charset=utf-8");
@@ -20,9 +20,9 @@ const accordionWrapper = document.querySelector(".catalog__list");
        }
        request.addEventListener("load", checkStateReadiness)
   };
-serverRequest()*/
+serverRequest()
 
-const data = [
+/*const data = [
     {
         "id": 1,
         "title": "Delivery",
@@ -38,7 +38,7 @@ const data = [
         "title": "Guarantee",
         "text": "12 months since receive of the goods"
     }
-]
+]*/
 
 const createElement = (item) => {
     const newElement = document.createElement("li");
@@ -57,7 +57,7 @@ const fillAccordionList = (data) => {
     })
     accordionItems = document.querySelectorAll(".list__item");    // после создания новых элементов записываем их в переменную
 }
-fillAccordionList(data)
+//fillAccordionList(data)
 
 /*const showAccordeonText = () => {
     accordionItems.forEach(function (item) {
@@ -81,4 +81,4 @@ const showAccordeonText = () => {                                        // см
         })
     })
 }
-showAccordeonText()
+//showAccordeonText()
