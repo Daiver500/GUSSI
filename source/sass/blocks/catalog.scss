@@ -370,7 +370,7 @@
 }
 
 .list__item.list__item--active .list__text {  // стили для аккордеона (при наличии класа --active у текста появляется высота, изначально нулевая)
-  height: 47px;
+  height: 60px;
   overflow: visible;
 }
 

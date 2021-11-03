@@ -40,7 +40,7 @@ const data = [
     }
 ]
 
-/*const createElement = (item) => {
+/*const createElement = (item) => {                              // первый способ создания карточек
     const newElement = document.createElement("li");
     newElement.classList.add("list__item");
     newElement.innerHTML = `
@@ -59,7 +59,7 @@ const fillAccordionList = (data) => {
 }
 fillAccordionList(data)*/
 
-const test = (data) => {
+const createAccordionElement = (data) => {                             // создаем карточку на основе моковых данных
   data.forEach(({title, text}) => {
     const newElement = document.createElement("li");
     newElement.classList.add("list__item");
@@ -71,9 +71,11 @@ const test = (data) => {
     accordionWrapper.append(newElement);
   })
 }
-test()
+createAccordionElement(data)
 
-/*const showAccordeonText = () => {
+
+
+/*const showAccordeonText = () => {                            // простой способ для аккордеона
     accordionItems.forEach(function (item) {
         item.addEventListener("click", function () {
             this.classList.toggle("list__item--active")
@@ -81,8 +83,9 @@ test()
     })
 }*/
 
-const showAccordeonText = () => {                                        // см. CSS по изменеию высоты и замене иконки (catalog --> list__item)
-    accordionItems.forEach(function (item) {
+const showAccordeonText = () => {
+    const accordionItems = document.querySelectorAll(".list__item");
+    accordionItems.forEach(function (item) {                                  // см. CSS по изменеию высоты и замене иконки (catalog --> list__item)
         item.addEventListener("click", function () {
             if (this.classList.contains("list__item--active")) {           // если есть активный класс убираем по клику
                 this.classList.remove("list__item--active");
@@ -95,4 +98,4 @@ const showAccordeonText = () => {                                        // см
         })
     })
 }
-//showAccordeonText()
+showAccordeonText()
