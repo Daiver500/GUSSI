@@ -83,7 +83,7 @@ createAccordionElement(data)
     })
 }*/
 
-const showAccordeonText = () => {
+const showAccordeonText = () => {                                               // аккордеон
     const accordionItems = document.querySelectorAll(".list__item");
     accordionItems.forEach(function (item) {                                  // см. CSS по изменеию высоты и замене иконки (catalog --> list__item)
         item.addEventListener("click", function () {
