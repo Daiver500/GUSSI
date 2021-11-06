@@ -5,7 +5,7 @@
 let accordionItems;                    // пустая переменная для будущих элементов
 const accordionWrapper = document.querySelector(".catalog__list");
 
-const serverRequest = () => {                           // работа с данными сервера
+/*const serverRequest = () => {                           // работа с данными сервера
     const request = new XMLHttpRequest();
     request.open(`GET`, "https://jsonplaceholder.typicode.com/posts/1/comments");
     request.setRequestHeader("Content-type", "application/json; charset=utf-8");
@@ -20,9 +20,9 @@ const serverRequest = () => {                           // работа с да�
        }
        request.addEventListener("load", checkStateReadiness)
   };
-serverRequest()
+serverRequest()*/
 
-/*const data = [
+const data = [
     {
         "id": 1,
         "title": "Delivery",
@@ -38,9 +38,9 @@ serverRequest()
         "title": "Guarantee",
         "text": "12 months since receive of the goods"
     }
-]*/
+]
 
-const createElement = (item) => {
+/*const createElement = (item) => {                              // первый способ создания карточек
     const newElement = document.createElement("li");
     newElement.classList.add("list__item");
     newElement.innerHTML = `
@@ -57,9 +57,25 @@ const fillAccordionList = (data) => {
     })
     accordionItems = document.querySelectorAll(".list__item");    // после создания новых элементов записываем их в переменную
 }
-//fillAccordionList(data)
+fillAccordionList(data)*/
 
-/*const showAccordeonText = () => {
+const createAccordionElement = (data) => {                             // создаем карточку на основе моковых данных
+  data.forEach(({title, text}) => {
+    const newElement = document.createElement("li");
+    newElement.classList.add("list__item");
+    newElement.innerHTML = `
+    <h3 class="list__title">${title}</h3>
+    <p class="list__text">${text}</p>
+    <button class="list__button" aria-label="open close button">
+    `
+    accordionWrapper.append(newElement);
+  })
+}
+createAccordionElement(data)
+
+
+
+/*const showAccordeonText = () => {                            // простой способ для аккордеона
     accordionItems.forEach(function (item) {
         item.addEventListener("click", function () {
             this.classList.toggle("list__item--active")
@@ -67,8 +83,9 @@ const fillAccordionList = (data) => {
     })
 }*/
 
-const showAccordeonText = () => {                                        // см. CSS по изменеию высоты и замене иконки (catalog --> list__item)
-    accordionItems.forEach(function (item) {
+const showAccordeonText = () => {                                               // аккордеон
+    const accordionItems = document.querySelectorAll(".list__item");
+    accordionItems.forEach(function (item) {                                  // см. CSS по изменеию высоты и замене иконки (catalog --> list__item)
         item.addEventListener("click", function () {
             if (this.classList.contains("list__item--active")) {           // если есть активный класс убираем по клику
                 this.classList.remove("list__item--active");
@@ -81,4 +98,4 @@ const showAccordeonText = () => {                                        // см
         })
     })
 }
-//showAccordeonText()
+showAccordeonText()
