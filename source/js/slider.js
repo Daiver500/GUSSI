@@ -9,7 +9,9 @@ const texts = document.querySelectorAll(".slider__information-header");
 let currentSlide = 1;
 let currentText = 1;
 
-const showSlidesQuantity = () => {
+// VARIANT 1 OF SLIDER
+
+/*const showSlidesQuantity = () => {
   if (slides.length < 10) {
     current.textContent = `0${slides.length}`
   } else {
@@ -77,4 +79,8 @@ sliderButtonPrevious.addEventListener("click", () => {
 sliderButtonNext.addEventListener("click", () => {
   changeSlides(+1);
   changeTexts(+1);
-})
+})*/
+
+// VARIANT 2 OF SLIDER
+
+
