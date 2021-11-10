@@ -92,6 +92,26 @@ slidesWrapper.style.display = "flex";
 slidesInner.style.overflow = "hidden";
 slidesWrapper.style.transition = "0.5s all";
 
+const dots = document.createElement("ol");
+const dotsArray = [];
+dots.classList.add("slider__indicators");
+slidesInner.append(dots);
+
+const createDots = () => {
+  slides.forEach((item, i) => {
+    const dot = document.createElement("li");
+    dot.setAttribute("data-slide-to", i + 1);
+    dot.classList.add("slider__dot");
+    if (i === 0) {
+      dot.style.opacity = "1"
+    }
+    dots.append(dot);
+    dotsArray.push(dot);
+  })
+}
+createDots()
+
+
 sliderButtonNext.addEventListener("click", () => {
   if (offset === +width.slice(0, width.length - 2) * (slides.length - 1)) {
     offset = 0;
@@ -111,6 +131,10 @@ sliderButtonNext.addEventListener("click", () => {
     current.textContent =  currentSlide;
   }
   changeTexts(-1);
+  dotsArray.forEach((dot) => {
+    dot.style.opacity = "0.5"
+  })
+  dotsArray[currentSlide - 1].style.opacity = "1";
 })
 
 sliderButtonPrevious.addEventListener("click", () => {
@@ -133,6 +157,10 @@ sliderButtonPrevious.addEventListener("click", () => {
     current.textContent = currentSlide;
   }
   changeTexts(+1);
+  dotsArray.forEach((dot) => {
+    dot.style.opacity = "0.5"
+  })
+  dotsArray[currentSlide - 1].style.opacity = "1";
 })
 
 const showText = (text) => {
@@ -155,3 +183,25 @@ showText(currentText)
 const changeTexts = (text) => {
   showText(currentText = currentText + text)
 }
+
+
+dotsArray.forEach((dot) => {
+  dot.addEventListener('click', (evt) => {
+      const target = evt.target.getAttribute('data-slide-to');
+
+      currentSlide = target;
+      offset = +width.slice(0, width.length - 2) * (target - 1);
+
+      slidesWrapper.style.transform = `translateX(-${offset}px)`;
+
+      if (slides.length < 10) {
+          current.textContent =  `0${currentSlide}`;
+      } else {
+          current.textContent =  currentSlide;
+      }
+      dotsArray.forEach((dot) => {
+        dot.style.opacity = "0.5"
+      });
+      dotsArray[currentSlide-1].style.opacity = "1";
+    });
+  });
