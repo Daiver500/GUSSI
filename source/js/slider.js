@@ -87,7 +87,8 @@ sliderButtonNext.addEventListener("click", () => {
 
 // VARIANT 2 OF SLIDER
 
-slidesWrapper.style.width = 600 * slides.length + "px";
+slidesWrapper.style.width = 100 * slides.length + "%";
+console.log(slides.length)
 slidesWrapper.style.display = "flex";
 slidesInner.style.overflow = "hidden";
 slidesWrapper.style.transition = "0.5s all";
@@ -130,7 +131,6 @@ sliderButtonNext.addEventListener("click", () => {
   } else {
     current.textContent =  currentSlide;
   }
-  changeTexts(-1);
   dotsArray.forEach((dot) => {
     dot.style.opacity = "0.5"
   })
@@ -156,33 +156,12 @@ sliderButtonPrevious.addEventListener("click", () => {
   } else {
     current.textContent = currentSlide;
   }
-  changeTexts(+1);
   dotsArray.forEach((dot) => {
     dot.style.opacity = "0.5"
   })
   dotsArray[currentSlide - 1].style.opacity = "1";
 })
 
-const showText = (text) => {
-  if (text > texts.length) {
-      currentText = 1
-  }
-
-  if (text < 1) {
-      currentText = texts.length
-  }
-
-  texts.forEach((text) => {
-    text.classList.add("hidden");
-  })
-
-  texts[currentText - 1].classList.remove("hidden");
-}
-showText(currentText)
-
-const changeTexts = (text) => {
-  showText(currentText = currentText + text)
-}
 
 
 dotsArray.forEach((dot) => {

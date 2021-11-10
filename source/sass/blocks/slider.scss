@@ -5,12 +5,17 @@
 .slider__inner {
   padding: 0;
   position: relative;
+  max-height: 768px;
 }
 
 .slider__logo {
   position: absolute;
   top: 32px;
   left: 52px;
+}
+
+.slider__description {
+  position: relative;
 }
 
 .logo__image {
@@ -44,7 +49,9 @@
 }
 
 .slider__information-header {
-  margin-bottom: 32px;
+  position: absolute;
+  bottom: 125px;
+  left: 40px;
 }
 
 .slider__title,
@@ -67,6 +74,7 @@
 
 .slider__buttons {
   max-height: 32px;
+  padding-right: 20px;
 }
 
 .slider__button {
@@ -136,6 +144,10 @@
     max-width: 1023px;
     width: 100%;
     margin-bottom: 6px;
+  }
+
+  .slider__description {
+    flex-grow: 1;
   }
 
   .slider__image {
