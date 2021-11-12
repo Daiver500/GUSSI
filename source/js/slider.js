@@ -112,12 +112,15 @@ const createDots = () => {
 }
 createDots()
 
+const deleteLetters = (string) => {
+  return +string.replace(/\D/g, "");
+}
 
 sliderButtonNext.addEventListener("click", () => {
-  if (offset === +width.slice(0, width.length - 2) * (slides.length - 1)) {
+  if (offset === deleteLetters(width) * (slides.length - 1)) {
     offset = 0;
   }  else {
-    offset = offset + +width.slice(0, width.length - 2);
+    offset = offset + deleteLetters(width);
   }
   slidesWrapper.style.transform = `translateX(-${offset}px)`
 
@@ -139,9 +142,9 @@ sliderButtonNext.addEventListener("click", () => {
 
 sliderButtonPrevious.addEventListener("click", () => {
   if (offset === 0) {
-    offset = +width.slice(0, width.length - 2) * (slides.length - 1)
+    offset = deleteLetters(width) * (slides.length - 1)
   }  else {
-    offset = offset - +width.slice(0, width.length - 2);
+    offset = offset - deleteLetters(width);
   }
   slidesWrapper.style.transform = `translateX(-${offset}px)`
 
@@ -162,14 +165,12 @@ sliderButtonPrevious.addEventListener("click", () => {
   dotsArray[currentSlide - 1].style.opacity = "1";
 })
 
-
-
 dotsArray.forEach((dot) => {
   dot.addEventListener('click', (evt) => {
       const target = evt.target.getAttribute('data-slide-to');
 
       currentSlide = target;
-      offset = +width.slice(0, width.length - 2) * (target - 1);
+      offset = deleteLetters(width) * (target - 1);
 
       slidesWrapper.style.transform = `translateX(-${offset}px)`;
 
